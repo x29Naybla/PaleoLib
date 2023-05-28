@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "paleolib",
+	"version": "${version}",
+	"name": "Paleo Lib",
+	"description": "A Lib that adds a base for archeology, but with suspicious stones",
+	"authors": [
+		"29Naybla"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/paleolib/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.x29naybla.PaleoLib"
+		],
+		"client": [
+			"com.x29naybla.PaleoLibClient"
+		],
+		"fabric-datagen": [
+			"com.x29naybla.PaleoLibDataGenerator"
+		]
+	},
+	"mixins": [
+		"paleolib.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
