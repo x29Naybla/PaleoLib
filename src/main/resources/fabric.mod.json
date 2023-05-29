@@ -3,7 +3,7 @@
 	"id": "paleolib",
 	"version": "${version}",
 	"name": "Paleo Lib",
-	"description": "A Lib that adds a base for archeology, but with suspicious stones",
+	"description": "A base for working with suspicious stones",
 	"authors": [
 		"29Naybla"
 	],
@@ -30,8 +30,11 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.14.21",
-		"minecraft": "=1.19.4",
+		"minecraft": "1.20-beta.7",
 		"java": ">=17",
 		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
 	}
 }
