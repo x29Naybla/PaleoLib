@@ -1,5 +1,6 @@
 package com.x29naybla;
 
+import com.x29naybla.block.ModBlocks;
 import com.x29naybla.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,5 +14,6 @@ public class PaleoLib implements ModInitializer {
     @Override
     public void onInitialize() {
         ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
     }
 }
