@@ -14,7 +14,7 @@ public class ModItems {
     public static final Item CHISEL = registerItem("chisel",
             new Item(new FabricItemSettings().maxCount(1)));
 
-    private static Item registerItem(String name,Item item){
+    private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(PaleoLib.MOD_ID, name), item);
     }
 
@@ -26,6 +26,7 @@ public class ModItems {
 
     public static void registerModItems(){
         PaleoLib.LOGGER.info("registering Mod Items for " + PaleoLib.MOD_ID);
+        registerItem("chisel", CHISEL);
         addItemsToItemGroup();
     }
 }
