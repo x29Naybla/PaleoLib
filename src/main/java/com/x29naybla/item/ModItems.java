@@ -26,7 +26,6 @@ public class ModItems {
 
     public static void registerModItems(){
         PaleoLib.LOGGER.info("registering Mod Items for " + PaleoLib.MOD_ID);
-        registerItem("chisel", CHISEL);
         addItemsToItemGroup();
     }
 }
